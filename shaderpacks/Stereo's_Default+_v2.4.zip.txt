@@ -1,0 +1,7 @@
+#Wed Nov 06 15:55:38 ART 2024
+shadowMapResolution=256
+WaveAmount=1
+TransparentShadowHardness=5
+ShadowSamples=1
+WaveSpeed=1.5
+LavaSpeed=1

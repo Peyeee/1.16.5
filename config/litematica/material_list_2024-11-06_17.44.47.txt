@@ -1,0 +1,32 @@
++--------------------------------+-------+---------+--------------+
+| Material List for schematic 'Granja de Hierro' (1 of 1 regions) |
++--------------------------------+-------+---------+--------------+
+| Item                           | Total | Missing |    Available |
++--------------------------------+-------+---------+--------------+
+| Vidrio                         |  1600 |    1600 |            0 |
+| Baldosa de cuarzo              |   600 |     600 |            0 |
+| Valla de abedul                |   260 |     260 |            0 |
+| Hielo comprimido               |   205 |     205 |            0 |
+| Vía                            |   131 |     131 |            0 |
+| Alfombra blanca                |   120 |     120 |            0 |
+| Hilo                           |   120 |     120 |            0 |
+| Cama blanca                    |    60 |      60 |            1 |
+| Balde de agua                  |    50 |      50 |            1 |
+| Cadena                         |    40 |      40 |            0 |
+| Cartel distorsionado           |    30 |      30 |            0 |
+| Placa de presión distorsionada |    28 |      28 |            0 |
+| Bloque de hierro               |    20 |      20 |            0 |
+| Vía propulsora                 |    16 |      16 |            0 |
+| Polvo de redstone              |    15 |      15 |            0 |
+| Balde de lava                  |    10 |      10 |            0 |
+| Comparador de redstone         |    10 |      10 |            0 |
+| Antorcha                       |     8 |       8 |            0 |
+| Antorcha de redstone           |     5 |       5 |            0 |
+| Botón de abedul                |     5 |       5 |            0 |
+| Vía detectora                  |     5 |       5 |            0 |
+| Lana blanca                    |     2 |       2 |            0 |
+| Tolva                          |     2 |       2 |            0 |
+| Bloque de comandos             |     1 |       1 |            0 |
++--------------------------------+-------+---------+--------------+
+| Item                           | Total | Missing |    Available |
++--------------------------------+-------+---------+--------------+

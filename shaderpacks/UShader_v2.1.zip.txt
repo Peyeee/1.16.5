@@ -1,0 +1,7 @@
+#Sat Nov 09 02:07:47 ART 2024
+cloudShadowsEnabled=false
+END_VolumetricSmoke=false
+shadowMapResolution=1024
+cloudVolumeEnabled=false
+RTAO_ENABLED=false
+fogVolumeEnabled=false

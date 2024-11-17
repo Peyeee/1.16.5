@@ -1,0 +1,5 @@
+#Wed Nov 06 15:14:59 ART 2024
+MotionBlurAmount=2.00
+Saturation=0.3
+DOFamount=16.0
+GodraySamples=4

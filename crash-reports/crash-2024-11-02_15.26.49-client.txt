@@ -1,0 +1,181 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 02/11/24 15:26
+Description: Initializing game
+
+java.lang.RuntimeException: Mixin transformation of net.minecraft.class_309 failed
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:427)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at net.minecraft.class_310.<init>(class_310.java:475)
+	at net.minecraft.client.main.Main.main(Main.java:177)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:422)
+	... 9 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InjectionError: LVT in net/minecraft/class_309::method_1466(JIIII)V has incompatible changes at opcode 421 in callback cloth-client-events-v0.mixins.json:MixinKeyboard from mod cloth-client-events-v0->@Inject::onKeyAfter(JIIIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;Lnet/minecraft/class_4069;[Z)V.
+ Expected: [Lnet/minecraft/class_4069;, [Z]
+    Found: [Lnet/minecraft/class_4069;, Z]
+Available: [Lnet/minecraft/class_4069;, Z, [Z]
+	at org.spongepowered.asm.mixin.injection.callback.CallbackInjector.inject(CallbackInjector.java:547)
+	at org.spongepowered.asm.mixin.injection.callback.CallbackInjector.inject(CallbackInjector.java:497)
+	at org.spongepowered.asm.mixin.injection.code.Injector.inject(Injector.java:276)
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.inject(InjectionInfo.java:445)
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1377)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:1062)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:402)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:327)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:421)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:403)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	... 12 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:427)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at net.minecraft.class_310.<init>(class_310.java:475)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:177)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:470)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1388454816 bytes (1324 MB) / 2113929216 bytes (2016 MB) up to 2147483648 bytes (2048 MB)
+	CPUs: 6
+	JVM Flags: 9 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx2G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	Fabric Mods: 
+		antighost: AntiGhost 1.16.5-fabric0.30.0-1.1.3
+		architectury: Architectury 1.32.68
+		autoconfig1u: Auto Config v1 Updated 3.3.1
+		betterf3: BetterF3 1.1.1
+		carpet: Carpet Mod 1.4.34
+		cloth-basic-math: Cloth Basic Math 0.5.1
+		cloth-client-events-v0: Cloth Client Events v0 1.5.47
+		cloth-config2: Cloth Config v4 4.10.13
+		com_moandjiezana_toml_toml4j: toml4j 0.7.2
+		com_squareup_moshi_moshi: moshi 1.9.2
+		com_squareup_okio_okio: okio 1.16.0
+		cotton-client-commands: Cotton Client Commands 1.0.1+1.16-rc1
+		crowdin-translate: CrowdinTranslate 1.2
+		customfov: Custom FoV 1.3.1-1.16.5
+		durabilityviewer: Giselbaers Durability Viewer 1.16.5-fabric0.30.0-1.10
+		dynamicfps: Dynamic FPS 2.0.0
+		fabric: Fabric API 0.42.0+1.16
+		fabric-api-base: Fabric API Base 0.4.0+3cc0f0907d
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.3.1+3cc0f0907d
+		fabric-biome-api-v1: Fabric Biome API (v1) 3.1.13+3cc0f0907d
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.6+3cc0f0907d
+		fabric-command-api-v1: Fabric Command API (v1) 1.1.3+3cc0f0907d
+		fabric-commands-v0: Fabric Commands (v0) 0.2.3+3cc0f0907d
+		fabric-containers-v0: Fabric Containers (v0) 0.1.12+3cc0f0907d
+		fabric-content-registries-v0: Fabric Content Registries (v0) 0.2.5+3cc0f0907d
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.1.4+3cc0f0907d
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 2.0.8+3cc0f0907d
+		fabric-entity-events-v1: Fabric Entity Events (v1) 1.2.4+3cc0f0907d
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.4.5+3cc0f0907d
+		fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.2+3cc0f0907d
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.7+3cc0f0907d
+		fabric-item-api-v1: Fabric Item API (v1) 1.2.2+3cc0f0907d
+		fabric-item-groups-v0: Fabric Item Groups (v0) 0.3.1+3cc0f0907d
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.5+3cc0f0907d
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.2+3cc0f0907d
+		fabric-language-kotlin: Fabric Language Kotlin 1.12.3+kotlin.2.0.21
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 1.2.2+3cc0f0907d
+		fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.0.3+3cc0f0907d
+		fabric-mining-levels-v0: Fabric Mining Levels (v0) 0.1.4+3cc0f0907d
+		fabric-models-v0: Fabric Models (v0) 0.3.1+3cc0f0907d
+		fabric-networking-api-v1: Fabric Networking API (v1) 1.0.5+3cc0f0907d
+		fabric-networking-blockentity-v0: Fabric Networking Block Entity (v0) 0.2.9+3cc0f0907d
+		fabric-networking-v0: Fabric Networking (v0) 0.3.3+3cc0f0907d
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 1.9.6+3cc0f0907d
+		fabric-object-builders-v0: Fabric Object Builders (v0) 0.7.3+3cc0f0907d
+		fabric-particles-v1: Fabric Particles (v1) 0.2.5+3cc0f0907d
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 0.7.6+3cc0f0907d
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 0.4.5+3cc0f0907d
+		fabric-renderer-indigo: Fabric Renderer - Indigo 0.4.5+3cc0f0907d
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 2.3.1+3cc0f0907d
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.1.6+3cc0f0907d
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 0.1.15+3cc0f0907d
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.3+3cc0f0907d
+		fabric-rendering-v1: Fabric Rendering (v1) 1.6.1+3cc0f0907d
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.4.8+3cc0f0907d
+		fabric-screen-api-v1: Fabric Screen API (v1) 1.0.1+3cc0f0907d
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.1.6+3cc0f0907d
+		fabric-structure-api-v1: Fabric Structure API (v1) 1.1.12+3cc0f0907d
+		fabric-tag-extensions-v0: Fabric Tag Extensions (v0) 1.1.2+3cc0f0907d
+		fabric-textures-v0: Fabric Textures (v0) 1.0.7+3cc0f0907d
+		fabric-tool-attribute-api-v1: Fabric Tool Attribute API (v1) 1.2.8+3cc0f0907d
+		fabric-transfer-api-v1: Fabric Transfer API (v1) 1.5.0+3cc0f0907d
+		fabricloader: Fabric Loader 0.15.7
+		fiber: fiber 0.23.0-2
+		gbfabrictools: GBfabrictools 1.3.2+1.16.4
+		inventoryprofilesnext: Inventory Profiles Next 1.9.5
+		itemscroller: Item Scroller 0.15.0-dev.20210111.205029
+		java: Java HotSpot(TM) 64-Bit Server VM 8
+		libipn: libIPN 2.0.7
+		litematica: Litematica 0.0.0-dev.20210120.213004
+		lithium: Lithium 0.6.4
+		malilib: MaLiLib 0.10.0-dev.21+arne.5
+		minecraft: Minecraft 1.16.5
+		minihud: MiniHUD 0.19.0-dev.20201103.184029
+		mixinextras: MixinExtras 0.3.5
+		modmenu: Mod Menu 1.16.9
+		modupdater: ModUpdater 1.1.11+1.16.2-rc2
+		okzoomer: Ok Zoomer 4.0.1+1.16.2
+		org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 2.0.21
+		org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 2.0.21
+		org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 2.0.21
+		org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 2.0.21
+		org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.25.0
+		org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.9.0
+		org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.9.0
+		org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.6.1
+		org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm: kotlinx-io-bytestring-jvm 0.5.4
+		org_jetbrains_kotlinx_kotlinx-io-core-jvm: kotlinx-io-core-jvm 0.5.4
+		org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.7.3
+		org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.7.3
+		org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.7.3
+		phosphor: Phosphor 0.7.2+build.12
+		replaymod: Replay Mod 1.16.4-2.5.2
+		roughlyenoughitems: Roughly Enough Items 5.12.248
+		roughlyenoughitems-api: REI (API) 5.12.248
+		roughlyenoughitems-default-plugin: REI (Default Plugin) 5.12.248
+		roughlyenoughitems-runtime: REI (Runtime) 5.12.248
+		shulkerboxtooltip: Shulker Box Tooltip 2.3.5+1.16.5
+		sodium: Sodium 0.1.0
+		voxelmap: VoxelMap 1.10.15
+	Launched Version: fabric-loader-0.15.7-1.16.5
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: Radeon RX550/550 Series GL version 4.6.0 Compatibility Profile Context 24.3.1.240216, ATI Technologies Inc.
+	GL Caps: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	CPU: <unknown>

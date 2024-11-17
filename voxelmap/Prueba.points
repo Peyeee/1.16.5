@@ -1,0 +1,6 @@
+subworlds:
+oldNorthWorlds:
+seeds:
+name:Latest Death,x:321,z:-212,y:68,enabled:true,red:1.0,green:1.0,blue:1.0,suffix:skull,world:,dimensions:overworld#
+name:Portal segundo,x:94,z:-1006,y:76,enabled:true,red:0.5002076,green:0.6630368,blue:0.5582398,suffix:,world:,dimensions:overworld#
+name:Portal primero,x:201,z:-140,y:69,enabled:true,red:0.67243093,green:0.8306657,blue:0.7567775,suffix:,world:,dimensions:overworld#

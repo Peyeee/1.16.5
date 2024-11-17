@@ -1,0 +1,17 @@
+subworlds:
+oldNorthWorlds:
+seeds:
+name:Spawn,x:6,z:101,y:63,enabled:true,red:0.0,green:1.0,blue:0.0,suffix:,world:,dimensions:overworld#
+name:Jungla,x:-13,z:1176,y:0,enabled:true,red:0.7294118,green:0.9882353,blue:0.2509804,suffix:pickaxe,world:,dimensions:overworld#
+name:Otra posible ksa,x:931,z:2171,y:68,enabled:true,red:0.9862309,green:0.21071994,blue:0.9046495,suffix:,world:,dimensions:overworld#
+name:Llanuras nieve,x:1825,z:2994,y:68,enabled:true,red:0.45402676,green:0.47675222,blue:0.05746925,suffix:,world:,dimensions:overworld#
+name:Aldea,x:2162,z:3615,y:64,enabled:true,red:0.91232157,green:0.6144749,blue:0.10232091,suffix:,world:,dimensions:overworld#
+name:Ksa,x:2566,z:3766,y:65,enabled:true,red:0.8301712,green:0.8658272,blue:0.44762862,suffix:,world:,dimensions:overworld#
+name:Portal,x:2528,z:3664,y:45,enabled:true,red:0.4148262,green:0.38865638,blue:0.04665768,suffix:,world:,dimensions:the_nether#
+name:Exactamente acá es el portal ENd,x:4050,z:3732,y:72,enabled:true,red:0.5800877,green:0.55418354,blue:0.15318847,suffix:,world:,dimensions:overworld#
+name:Escape,x:1037,z:24,y:72,enabled:true,red:0.5552632,green:0.40517527,blue:0.056277752,suffix:,world:,dimensions:the_end#
+name:Iglú con aldeano zombificado,x:1828,z:3170,y:75,enabled:true,red:0.0493896,green:0.08395654,blue:0.85622865,suffix:,world:,dimensions:overworld#
+name:Casita mega hiper pro,x:1293,z:4670,y:0,enabled:true,red:0.76862746,green:0.14901961,blue:0.3254902,suffix:house,world:,dimensions:overworld#
+name:Oceano,x:2867,z:3919,y:63,enabled:true,red:0.32354552,green:0.49887013,blue:0.8284143,suffix:,world:,dimensions:overworld#
+name:Latest Death,x:-445,z:2,y:-195,enabled:true,red:1.0,green:1.0,blue:1.0,suffix:skull,world:,dimensions:the_end#
+name:Guardianes,x:3263,z:4879,y:63,enabled:true,red:0.45882353,green:0.07058824,blue:0.49411765,suffix:fish,world:,dimensions:overworld#

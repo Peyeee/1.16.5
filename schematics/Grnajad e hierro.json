@@ -1,0 +1,79 @@
+{
+  "name": "Grnajad e hierro",
+  "origin": [
+    68,
+    63,
+    59
+  ],
+  "current_version_id": 1,
+  "selection_normal": {
+    "name": "Grnajad e hierro"
+  },
+  "selection_simple": {
+    "name": "Grnajad e hierro",
+    "current": "Unnamed",
+    "boxes": [
+      {
+        "pos1": [
+          20,
+          53,
+          81
+        ],
+        "pos2": [
+          13,
+          84,
+          93
+        ],
+        "name": "Unnamed"
+      }
+    ]
+  },
+  "last_seen_area": {
+    "name": "Grnajad e hierro",
+    "boxes": [
+      {
+        "pos1": [
+          20,
+          53,
+          81
+        ],
+        "pos2": [
+          13,
+          84,
+          93
+        ],
+        "name": "Unnamed"
+      }
+    ],
+    "origin": [
+      13,
+      53,
+      81
+    ]
+  },
+  "selection_mode": "SIMPLE",
+  "versions": [
+    {
+      "name": "Grnajad e hierro",
+      "file_name": "Grnajad e hierro_00001",
+      "area_offset": [
+        -48,
+        -10,
+        22
+      ],
+      "version": 1,
+      "timestamp": 1730562012385
+    },
+    {
+      "name": "Grnajad e hierro",
+      "file_name": "Grnajad e hierro_00001",
+      "area_offset": [
+        -55,
+        -10,
+        22
+      ],
+      "version": 2,
+      "timestamp": 1730562098187
+    }
+  ]
+}

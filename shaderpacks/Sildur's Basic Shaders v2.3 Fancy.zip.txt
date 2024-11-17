@@ -1,0 +1,12 @@
+#Thu Nov 07 18:04:57 ART 2024
+Waving_Grass=false
+Waving_Entities=false
+Waving_Water=false
+SSAO=false
+Waving_Lava=false
+Waving_Lanterns=false
+Waving_Tallgrass=false
+Waving_Vines=false
+TAA=false
+Waving_Leaves=false
+Waving_Fire=false

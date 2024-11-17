@@ -1,0 +1,19 @@
+{
+  "name": "Granja de Hierro",
+  "current": "Granja de Hierro",
+  "boxes": [
+    {
+      "pos1": [
+        8,
+        76,
+        96
+      ],
+      "pos2": [
+        93,
+        48,
+        44
+      ],
+      "name": "Granja de Hierro"
+    }
+  ]
+}

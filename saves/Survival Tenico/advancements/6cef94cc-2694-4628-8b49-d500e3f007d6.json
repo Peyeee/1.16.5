@@ -1,0 +1,16 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2024-10-24 17:25:51 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:river": "2024-11-06 17:52:58 -0300",
+      "minecraft:plains": "2024-10-24 17:23:11 -0300"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}
